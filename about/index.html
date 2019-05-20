@@ -97,13 +97,13 @@
 
 
   <meta property="og:type" content="website">
-<meta property="og:title" content="about">
+<meta property="og:title" content="About Me">
 <meta property="og:url" content="http://yoursite.com/about/index.html">
 <meta property="og:site_name" content="Fibonacci1">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-05-20T08:30:02.362Z">
+<meta property="og:updated_time" content="2019-05-20T13:22:13.289Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="about">
+<meta name="twitter:title" content="About Me">
 
 
 
@@ -121,7 +121,7 @@
   };
 </script>
 
-  <title>about | Fibonacci1</title>
+  <title>About Me | Fibonacci1</title>
   
 
 
@@ -350,7 +350,7 @@
     <div class="post-block page">
       <header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">about
+<h1 class="post-title" itemprop="name headline">About Me
 
 </h1>
 
@@ -370,7 +370,10 @@
       <div class="post-body">
         
         
-          
+          <p><br></p>
+<div class="pdf" target="pdf/resume.pdf" height></div>
+<p><br></p>
+
         
       </div>
       
@@ -430,7 +433,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-count">5</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -449,7 +452,15 @@
                     
                       
                     
-                    <span class="site-state-item-count">1</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">5</span>
                     <span class="site-state-item-name">categories</span>
                   </a>
                 </div>
@@ -470,7 +481,19 @@
                     
                       
                     
-                    <span class="site-state-item-count">2</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">8</span>
                     <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
@@ -687,6 +710,32 @@
   
 
   
+<script>
+if ($('body').find('div.pdf').length) {
+  $.ajax({
+    type: 'GET',
+    url: '//cdn.jsdelivr.net/npm/pdfobject@2/pdfobject.min.js',
+    dataType: 'script',
+    cache: true,
+    success: function() {
+      $('body').find('div.pdf').each(function(i, o) {
+        PDFObject.embed($(o).attr('target'), $(o), {
+          pdfOpenParams: {
+            navpanes: 0,
+            toolbar: 0,
+            statusbar: 0,
+            pagemode: 'thumbs',
+            view: 'FitH'
+          },
+          PDFJS_URL: '/lib/pdf/web/viewer.html',
+          height: $(o).attr('height') || '500px'
+        });
+      });
+    },
+  });
+}
+</script>
+
 
   
 

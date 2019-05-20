@@ -356,7 +356,7 @@
         
           
         
-        Um..! 3 posts in total. Keep on posting.
+        Um..! 5 posts in total. Keep on posting.
       </span>
       
 
@@ -381,16 +381,16 @@
 
       <h2 class="post-title">
         
-          <a class="post-title-link" href="/2019/05/20/hello/" itemprop="url">
+          <a class="post-title-link" href="/2019/05/20/Vanilla-GAN/" itemprop="url">
             
-              <span itemprop="name">hello</span>
+              <span itemprop="name">Vanilla GAN:Just GAN It!!</span>
             
           </a>
         
       </h2>
 
       <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-05-20T01:23:26+08:00" content="2019-05-20">
+        <time class="post-time" itemprop="dateCreated" datetime="2019-05-20T09:38:36+08:00" content="2019-05-20">
           05-20
         </time>
       </div>
@@ -416,17 +416,87 @@
 
       <h2 class="post-title">
         
-          <a class="post-title-link" href="/2019/05/19/test-my-site/" itemprop="url">
+          <a class="post-title-link" href="/2019/05/20/TF-Kids-1/" itemprop="url">
             
-              <span itemprop="name">test_my_site</span>
+              <span itemprop="name">TF Kids: 1st Day of Tensorflow</span>
             
           </a>
         
       </h2>
 
       <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-05-19T23:39:57+08:00" content="2019-05-19">
-          05-19
+        <time class="post-time" itemprop="dateCreated" datetime="2019-05-20T08:38:36+08:00" content="2019-05-20">
+          05-20
+        </time>
+      </div>
+
+    </header>
+  </article>
+
+
+
+      
+
+        
+        
+        
+
+        
+        
+
+        
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h2 class="post-title">
+        
+          <a class="post-title-link" href="/2019/05/20/EXTRA-1-What-we-talk-about-when-we-talk-about-Gradient-Descent/" itemprop="url">
+            
+              <span itemprop="name">EXTRA[1]: What we talk about when we talk about Gradient Descent</span>
+            
+          </a>
+        
+      </h2>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated" datetime="2019-05-20T00:38:36+08:00" content="2019-05-20">
+          05-20
+        </time>
+      </div>
+
+    </header>
+  </article>
+
+
+
+      
+
+        
+        
+        
+
+        
+        
+
+        
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h2 class="post-title">
+        
+          <a class="post-title-link" href="/2019/05/20/Notes-of-Convex-Optimization/" itemprop="url">
+            
+              <span itemprop="name">Notes of Convex Optimization(1)</span>
+            
+          </a>
+        
+      </h2>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated" datetime="2019-05-20T00:38:36+08:00" content="2019-05-20">
+          05-20
         </time>
       </div>
 
@@ -486,7 +556,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-count">5</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -505,7 +575,15 @@
                     
                       
                     
-                    <span class="site-state-item-count">1</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">5</span>
                     <span class="site-state-item-name">categories</span>
                   </a>
                 </div>
@@ -526,7 +604,19 @@
                     
                       
                     
-                    <span class="site-state-item-count">2</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">8</span>
                     <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
@@ -737,6 +827,32 @@
   
 
   
+<script>
+if ($('body').find('div.pdf').length) {
+  $.ajax({
+    type: 'GET',
+    url: '//cdn.jsdelivr.net/npm/pdfobject@2/pdfobject.min.js',
+    dataType: 'script',
+    cache: true,
+    success: function() {
+      $('body').find('div.pdf').each(function(i, o) {
+        PDFObject.embed($(o).attr('target'), $(o), {
+          pdfOpenParams: {
+            navpanes: 0,
+            toolbar: 0,
+            statusbar: 0,
+            pagemode: 'thumbs',
+            view: 'FitH'
+          },
+          PDFJS_URL: '/lib/pdf/web/viewer.html',
+          height: $(o).attr('height') || '500px'
+        });
+      });
+    },
+  });
+}
+</script>
+
 
   
 
